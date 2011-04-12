@@ -20,6 +20,9 @@ class TutorialApp(object):
     def on_window_destroy(self, widget, data=None):
         gtk.main_quit()
 
+    def on_new_menu_item_activate(self, widget, data=None):
+        print("new menu item activate")
+
     def __init__(self, cdv=None):
         self.cdv = cdv
         builder = gtk.Builder()
@@ -42,6 +45,7 @@ class TutorialApp(object):
         self.cell = gtk.CellRendererText()
         self.numCol.pack_start(self.cell, True)
         self.numCol.add_attribute(self.cell, 'text', 0)
+        self.numCol.set_sort_column_id(1)
         self.desCol.pack_start(self.cell, True)
         self.desCol.add_attribute(self.cell, 'text', 0)
         self.desCol.set_sort_column_id(0)
