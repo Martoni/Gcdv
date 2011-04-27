@@ -3,8 +3,8 @@
   <!-- interface-requires gtk+ 2.16 -->
   <!-- interface-naming-policy project-wide -->
   <widget class="GtkWindow" id="window">
-    <property name="width_request">700</property>
-    <property name="height_request">500</property>
+    <property name="width_request">900</property>
+    <property name="height_request">300</property>
     <property name="visible">True</property>
     <property name="title" translatable="yes">CarnetDeVol</property>
     <signal name="destroy" handler="on_window_destroy"/>
@@ -168,6 +168,7 @@
                 <property name="visible">True</property>
                 <property name="can_focus">True</property>
                 <signal name="row_activated" handler="on_treeview_row_activated"/>
+                <signal name="button_release_event" handler="on_treeview_button_release_event"/>
               </widget>
             </child>
           </widget>
@@ -190,5 +191,9 @@
         </child>
       </widget>
     </child>
+  </widget>
+  <widget class="GtkMenu" id="menu4">
+    <property name="visible">True</property>
+    <property name="ubuntu_local">True</property>
   </widget>
 </glade-interface>

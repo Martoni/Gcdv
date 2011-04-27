@@ -12,7 +12,6 @@ from CarnetDeVol import Flight, CarnetDeVol, Track, Gpx
 from CarnetDeVol import datetime2gpx, gpx2datetime 
 
 import pygtk
-pygtk.require("2.0")
 import gtk
 
 CDV = None
@@ -43,12 +42,43 @@ class ListFly(object):
                                 str(fly.getDesc())])
     def suppressFly(self, fly):
         for entry in self.treestore:
-            if int(entry[0]) == fly.getNumber():
-                self.treestore.remove(entry)
+            fly_num = fly.getNumber()
+            if int(entry[0]) == fly_num:
+                print "try to suppress fly number "+str(fly_num)
+                print str(entry[0])
+                self.treestore.remove(self.treestore.get_iter(self.getRowNum(fly)))
         #TODO: suppress fly in cdv
 
     def getFly(self, row_number):
-        return self.cdv.getFlight(int(self.treestore[row_number][0]))#XXX
+        return self.cdv.getFlight(int(self.treestore[row_number][0]))
+
+    def getRowNum(self, fly):
+        row_num = 0
+        for entry in self.treestore:
+            if int(entry[0]) == fly.getNumber():
+                    return row_num
+            row_num = row_num + 1
+
+    def selected(self):
+        model,iterat = self.treeview.get_selection().get_selected()
+        return self.getFly(model.get_path(iterat))
+
+    def siteEdited(self, cellrenderertext, path, new_text):
+        print "path "+str(path)+" new_text : "+str(new_text)
+        print "cellrenderertext : "+str(cellrenderertext)
+    def dateEdited(self, cellrenderertext, path, new_text):
+        print "path "+str(path)+" new_text : "+str(new_text)
+        print "cellrenderertext : "+str(cellrenderertext)
+    def durEdited(self, cellrenderertext, path, new_text):
+        print "path "+str(path)+" new_text : "+str(new_text)
+        print "cellrenderertext : "+str(cellrenderertext)
+    def wingEdited(self, cellrenderertext, path, new_text):
+        print "path "+str(path)+" new_text : "+str(new_text)
+        print "cellrenderertext : "+str(cellrenderertext)
+    def desEdited(self, cellrenderertext, path, new_text):
+        print "path "+str(path)+" new_text : "+str(new_text)
+        print "cellrenderertext : "+str(cellrenderertext)
+
 
     def __init__(self, cdv, builder):
         self.treeview = builder.get_object("treeview")
@@ -79,28 +109,43 @@ class ListFly(object):
         self.numCol.add_attribute(self.cell, 'text', 0)
         self.numCol.set_sort_column_id(0)
 
-        self.siteCol.pack_start(self.cell, True)
-        self.siteCol.add_attribute(self.cell, 'text', 1)
+        self.cellSite = gtk.CellRendererText()
+        self.cellSite.connect("edited", self.siteEdited)
+        self.cellSite.set_property("editable", True)
+        self.siteCol.pack_start(self.cellSite, True)
+        self.siteCol.add_attribute(self.cellSite, 'text', 1)
         self.siteCol.set_sort_column_id(1)
 
-        self.dateCol.pack_start(self.cell, True)
-        self.dateCol.add_attribute(self.cell, 'text', 2)
+        self.cellDate = gtk.CellRendererText()
+        self.cellDate.connect("edited", self.dateEdited)
+        self.cellDate.set_property("editable", True)
+        self.dateCol.pack_start(self.cellDate, True)
+        self.dateCol.add_attribute(self.cellDate, 'text', 2)
         self.dateCol.set_sort_column_id(2)
 
-        self.durCol.pack_start(self.cell, True)
-        self.durCol.add_attribute(self.cell, 'text', 3)
+        self.cellDur = gtk.CellRendererText()
+        self.cellDur.connect("edited", self.durEdited)
+        self.cellDur.set_property("editable", True)
+        self.durCol.pack_start(self.cellDur, True)
+        self.durCol.add_attribute(self.cellDur, 'text', 3)
         self.durCol.set_sort_column_id(3)
 
-        self.wingCol.pack_start(self.cell, True)
-        self.wingCol.add_attribute(self.cell, 'text', 4)
+        self.cellWing = gtk.CellRendererText()
+        self.cellWing.connect("edited", self.wingEdited)
+        self.cellWing.set_property("editable", True)
+        self.wingCol.pack_start(self.cellWing, True)
+        self.wingCol.add_attribute(self.cellWing, 'text', 4)
         self.wingCol.set_sort_column_id(4)
 
         self.trackCol.pack_start(self.cell, True)
         self.trackCol.add_attribute(self.cell, 'text', 5)
         self.trackCol.set_sort_column_id(5)
 
-        self.desCol.pack_start(self.cell, True)
-        self.desCol.add_attribute(self.cell, 'text', 6)
+        self.cellDes = gtk.CellRendererText()
+        self.cellDes.connect("edited", self.desEdited)
+        self.cellDes.set_property("editable", True)
+        self.desCol.pack_start(self.cellDes, True)
+        self.desCol.add_attribute(self.cellDes, 'text', 6)
         self.desCol.set_sort_column_id(6)
 
         self.treeview.set_reorderable(True)
@@ -115,13 +160,15 @@ class Gcdv(object):
         print("new menu item activate")
     def on_quit_menu_item_activate(self, widget, data=None):
         gtk.main_quit()
+    def on_treeview_button_release_event(self, widget, data=None):
+        if data.button == 3:
+            print "fly selected "+str(self.listFlies.selected().getNumber())
 
     # list signals
     def on_treeview_row_activated(self, widget, data, col):
         """ data = (row_number,) """
+        print "data : "+str(data)+" col : "+str(col)
         fly = self.listFlies.getFly(data[0])
-        self.listFlies.suppressFly(fly)
-        print("fly number : "+str(fly.getNumber()))
 
     # init windows
     def __init__(self, cdv=None):
