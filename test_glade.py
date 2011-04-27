@@ -7,7 +7,7 @@
 # And execute it:
 # ./tutorial.py
 
-import sys, datetime
+import sys, datetime, os
 from CarnetDeVol import Flight, CarnetDeVol, Track, Gpx
 from CarnetDeVol import datetime2gpx, gpx2datetime 
 
@@ -136,6 +136,7 @@ class Gcdv(object):
                 self.listFlies.appendFly(fly)
 
 if __name__ == "__main__":
+    os.popen("gtk-builder-convert gui_cdv.glade gui_cdv.xml")
     if len(sys.argv) == 2:
         CDV = CarnetDeVol(xmlfilename=sys.argv[1])
     else:
