@@ -169,9 +169,9 @@ class Flight:
             raise Exception("Can't create flight, wrong node")
 
     def getNumber(self):
-        """ get the number of the flight
-        """
         return int(self.node.get("number"))
+    def setNumber(self, number):
+        self.node.set("number", str(int(number)))
     def getDate(self):
         date_node = self.node.find("date")
         if date_node == None:
