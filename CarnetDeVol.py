@@ -87,7 +87,6 @@ class CarnetDeVol:
         savefile.write(XML_HEADER + '\n' +\
                 XMLBeautifier(ET.tostring(self.cdv_root,"utf-8")))
         savefile.close()
-        #self.xml.write(self.xmlfilename)
 
     def getName(self):
         """ Return name of the carnet de vol
@@ -103,6 +102,11 @@ class CarnetDeVol:
         """ Return the list of flights number
         """
         return sorted([fly.getNumber() for fly in self.getFlights()])
+    def getMaxFlightNum(self):
+        try:
+            return self.getFlightNumbers()[-1]
+        except IndexError:
+            return 0
 
     def getFlights(self):
         """ Return a list of flights under the CarnetDeVol
@@ -117,13 +121,17 @@ class CarnetDeVol:
                 return flight
         return None
 
-    def addFlights(self, flight_num):
+    def delFlight(self, fly):
+        """ Suppress a flight from list
+        """
+        self.cdv_root.remove(fly.node)
+
+    def addFlight(self, flight_num):
         """ Adding new flight under carnetdevol
         """
         new_flight = Flight(number=flight_num)
         new_flight.setDate(datetime.datetime.now())
         self.cdv_root.append(new_flight.node)
-
 
     def printFlights(self):
         """ Print an array of each flight
