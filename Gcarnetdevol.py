@@ -7,6 +7,16 @@
 # And execute it:
 # ./tutorial.py
 
+__VERSION__ = "0.1-git"
+__AUTHORS__ = ["Fabien Marteau <fabien.marteau@martoni.fr>"]
+__WEB__     = "www.martoni.fr" 
+__LICENSE__ = """ 
+'THE BEER-WARE LICENSE' (Revision 42):
+<fabien.marteau@martoni.fr> wrote this file. As long as you retain this notice you
+can do whatever you want with this stuff. If we meet some day, and you think
+this stuff is worth it, you can buy me a beer in return. 
+"""
+
 import sys, datetime, os
 from CarnetDeVol import Flight, CarnetDeVol, Track, Gpx
 from CarnetDeVol import datetime2gpx, gpx2datetime 
@@ -230,6 +240,19 @@ class Gcdv(object):
             self.listFlies.suppressFly(fly_activated)
         except:
             pass
+
+    def on_about_menu_activate(self, widget, data=None):
+        """ About menu
+        """
+        about = gtk.AboutDialog()
+        about.set_name("GCarnetDeVol")
+        about.set_version(__VERSION__)
+        about.set_website(__WEB__)
+        about.set_license(__LICENSE__)
+        about.set_authors(__AUTHORS__)
+        about.run()
+        about.destroy()
+
     # right clic
     def on_treeview_button_release_event(self, widget, data=None):
         if data.button == 3:

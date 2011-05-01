@@ -72,6 +72,7 @@ class CarnetDeVol:
     def __init__(self, xmlfilename=None):
         if xmlfilename == None:
             print "TODO: create a new CarnetDeVol"
+            self.cdv_root = ET.Element("cdv")
         else:
             self.xmlfilename = xmlfilename
             self.xml = ET.parse(xmlfilename)
