@@ -182,32 +182,32 @@ class Flight:
         self.node.set("number", str(int(number)))
     def getDate(self):
         date_node = self.node.find("date")
-        if date_node == None:
+        if date_node == None or date_node.text == None:
             return ""
         else:
             return date_node.text.strip("\n\t ")
 
     def getSite(self):
         site_node = self.node.find("site")
-        if site_node == None:
+        if site_node == None or site_node.text == None:
             return ""
         else:
             return site_node.text.strip("\n\t ")
     def getDuration(self):
         duration_node = self.node.find("duration")
-        if duration_node == None:
+        if duration_node == None or duration_node.text == None:
             return 0
         else:
             return int(duration_node.text.strip("\n\t "))
     def getDesc(self):
         desc_node = self.node.find("description")
-        if desc_node == None:
+        if desc_node == None or desc_node.text == None:
             return ""
         else:
             return desc_node.text.strip("\n\t ")
     def getWing(self):
         wing_node = self.node.find("wing")
-        if wing_node == None:
+        if wing_node == None or wing_node.text == None:
             return ""
         else:
             return wing_node.text.strip("\n\t ")
