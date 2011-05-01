@@ -47,7 +47,6 @@ def string2datetime(datetime_str):
            minute=int(vtime[1]),
            second=int(vtime[2]))
 
-
 class ListFly(object):
 
     def appendFly(self, fly):
@@ -187,6 +186,27 @@ class Gcdv(object):
         """ New menu
         """
         print("TODO:new menu item activate")
+    def on_open_cdv_menu_activate(self, widget, data=None):
+        """ Open menu
+        """
+        dialog = gtk.FileChooserDialog( "Open..",
+                                        None,
+                                        gtk.FILE_CHOOSER_ACTION_OPEN,
+                                        (gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
+                                        gtk.STOCK_OPEN, gtk.RESPONSE_OK))
+        dialog.set_default_response(gtk.RESPONSE_OK)
+        filter = gtk.FileFilter()
+        filter.set_name("All files")
+        filter.add_pattern("*.cdv")
+        dialog.add_filter(filter)
+        response = dialog.run()
+        if response == gtk.RESPONSE_OK:
+            self.cdv = CarnetDeVol(xmlfilename=dialog.get_filename()) 
+            self.fillListFlies()
+        elif response == gtk.RESPONSE_CANCEL:
+            pass
+        dialog.destroy()
+
     def on_imagemenuitem3_activate(self, widget, data=None):
         """ Save menu
         """
@@ -224,11 +244,14 @@ class Gcdv(object):
     # init windows
     def __init__(self, cdv=None):
         self.cdv = cdv
-        builder = gtk.Builder()
-        builder.add_from_file("gui_cdv.xml")
-        builder.connect_signals(self)
-        self.window = builder.get_object("window")
-        self.listFlies = ListFly(self.cdv, builder)
+        self.builder = gtk.Builder()
+        self.builder.add_from_file("gui_cdv.xml")
+        self.builder.connect_signals(self)
+        self.window = self.builder.get_object("window")
+        self.fillListFlies()
+
+    def fillListFlies(self): 
+        self.listFlies = ListFly(self.cdv, self.builder)
         if self.cdv != None:
             for fly in self.cdv.getFlights():
                 self.listFlies.appendFly(fly)
@@ -241,7 +264,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         CDV = CarnetDeVol(xmlfilename=sys.argv[1])
     else:
-        CDV = None
+        CDV = CarnetDeVol()
     app = Gcdv(CDV)
     app.window.show()
     gtk.main()
