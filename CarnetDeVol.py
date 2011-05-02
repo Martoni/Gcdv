@@ -71,7 +71,6 @@ class CarnetDeVol:
     """
     def __init__(self, xmlfilename=None):
         if xmlfilename == None:
-            print "TODO: create a new CarnetDeVol"
             self.cdv_root = ET.Element("cdv")
         else:
             self.xmlfilename = xmlfilename
@@ -82,6 +81,10 @@ class CarnetDeVol:
                                 str(self.cdv_root.tag))
     def dump(self):
         return ET.dump(self.cdv_root)
+
+
+    def setXmlFilename(self, xmlfilename):
+        self.xmlfilename = xmlfilename 
 
     def save(self):
         savefile = open(self.xmlfilename, "w")
@@ -97,7 +100,7 @@ class CarnetDeVol:
     def setName(self, name):
         """ Set the name of carnetdevol
         """
-        print("TODO")
+        self.cdv_root.set("name", str(name))
 
     def getFlightNumbers(self):
         """ Return the list of flights number

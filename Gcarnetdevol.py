@@ -192,10 +192,6 @@ class Gcdv(object):
     def on_window_destroy(self, widget, data=None):
         gtk.main_quit()
     # menu items signals
-    def on_new_menu_item_activate(self, widget, data=None):
-        """ New menu
-        """
-        print("TODO:new menu item activate")
     def on_open_cdv_menu_activate(self, widget, data=None):
         """ Open menu
         """
@@ -221,6 +217,31 @@ class Gcdv(object):
         """ Save menu
         """
         self.cdv.save()
+
+    def on_save_as_menu_activate(self, widget, data=None):
+        """ Save as menu
+        """
+        dialog = gtk.FileChooserDialog( "Save as ...",
+                                        None,
+                                        gtk.FILE_CHOOSER_ACTION_SAVE,
+                                        (gtk.STOCK_CANCEL, gtk.RESPONSE_CANCEL,
+                                        gtk.STOCK_SAVE, gtk.RESPONSE_OK))
+        dialog.set_default_response(gtk.RESPONSE_OK)
+        filter = gtk.FileFilter()
+        filter.set_name("All files")
+        filter.add_pattern("*.cdv")
+        dialog.add_filter(filter)
+        response = dialog.run()
+        if response == gtk.RESPONSE_OK:
+            filename = dialog.get_filename()
+            self.cdv.setXmlFilename(filename)
+            self.cdv.setName(filename.split(".")[0].split("/")[-1])
+            self.cdv.save()
+            self.window.set_title("CarnetDeVol - "+str(self.cdv.getName()))
+        elif response == gtk.RESPONSE_CANCEL:
+            pass
+        dialog.destroy()
+
     def on_quit_menu_item_activate(self, widget, data=None):
         """ Quit menu
         """
@@ -271,6 +292,10 @@ class Gcdv(object):
         self.builder.add_from_file("gui_cdv.xml")
         self.builder.connect_signals(self)
         self.window = self.builder.get_object("window")
+        if cdv.getName()==None:
+            self.window.set_title("CarnetDeVol - New*")
+        else:
+            self.window.set_title("CarnetDeVol - "+str(cdv.getName()))
         self.fillListFlies()
 
     def fillListFlies(self): 
