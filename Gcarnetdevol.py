@@ -242,11 +242,13 @@ class Gcdv(object):
             pass
         dialog.destroy()
 
+
     def on_quit_menu_item_activate(self, widget, data=None):
         """ Quit menu
         """
         gtk.main_quit()
 
+    # edit menu
     def on_add_fly_activate(self, widget, data=None):
         """ Add menu
         """
@@ -261,7 +263,13 @@ class Gcdv(object):
             self.listFlies.suppressFly(fly_activated)
         except:
             pass
+    # track menu
+    def on_add_track_activate(self, widget, data=None):
+        """ add track menu
+        """
 
+
+    # about menu
     def on_about_menu_activate(self, widget, data=None):
         """ About menu
         """
