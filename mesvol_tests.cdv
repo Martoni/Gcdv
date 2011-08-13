@@ -46,9 +46,755 @@
         <wing>Alpha4
         </wing>
     </flight>
-    <flight number="5">
-        <date>2011-04-29T23:09:38Z
+    <flight number="57">
+        <date>2011-02-13T15:38:40Z
         </date>
-        <site />
+        <site>treh-aérotech
+        </site>
+        <wing>koyot bobby
+        </wing>
+        <description />
+        <duration>720
+        </duration>
+    </flight>
+    <flight number="58">
+        <date>2011-02-26T15:08:29Z
+        </date>
+        <site>Sondernach (autriche)
+        </site>
+        <duration>840
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Premier vol en autriche
+        </description>
+    </flight>
+    <flight number="59">
+        <date>2011-03-03T14:42:32Z
+        </date>
+        <site>Sondernach (autriche)
+        </site>
+        <duration>1200
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Deuxième vol à sondernach, bien vautré à l'aterro
+        </description>
+    </flight>
+    <flight number="60">
+        <date>2011-03-03T16:20:29Z
+        </date>
+        <site>Sondernach (autriche)
+        </site>
+        <duration>1080
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Troisième vol à sondernach, aterro correct cette fois
+        </description>
+    </flight>
+    <flight number="61">
+        <date>2011-03-04T13:30:40Z
+        </date>
+        <site>Diedamskopf (autriche)
+        </site>
+        <duration>900
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="62">
+        <date>2011-03-04T15:03:51Z
+        </date>
+        <site>Diedamskopf (autriche)
+        </site>
+        <duration>840
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="63">
+        <date>2011-03-12T15:56:34Z
+        </date>
+        <site>Treh-markstein
+        </site>
+        <duration>540
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="64">
+        <date>2011-04-02T12:35:23Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <wing>koyot bobby
+        </wing>
+        <duration>840
+        </duration>
+    </flight>
+    <flight number="65">
+        <date>2011-04-10T10:29:57Z
+        </date>
+        <site>Drumont-Urbès
+        </site>
+        <duration>540
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="66">
+        <date>2011-04-10T12:19:57Z
+        </date>
+        <site>Drumont-Urbès
+        </site>
+        <duration>1320
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="67">
+        <date>2011-04-10T18:33:43Z
+        </date>
+        <site>Drumont-Urbès
+        </site>
+        <duration>540
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="68">
+        <date>2011-04-28T11:45:41Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description />
+    </flight>
+    <flight number="69">
+        <date>2011-04-28T16:14:30Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>1260
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="70">
+        <date>2011-05-29T11:24:17Z
+        </date>
+        <site>Treh-Treh
+        </site>
+        <duration>3240
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Presque une heure de vol, repose au déco
+        </description>
+    </flight>
+    <flight number="71">
+        <date>2011-05-29T17:42:15Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>780
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="72">
+        <date>2011-06-25T16:37:19Z
+        </date>
+        <site>Siebach-Aérotech
+        </site>
+        <duration>120
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>nano vol du siebach, montée à pied ouch
+        </description>
+    </flight>
+    <flight number="73">
+        <date>2011-06-26T11:32:52Z
+        </date>
+        <site>Schnepf-sondernach
+        </site>
+        <duration>2820
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description />
+    </flight>
+    <flight number="74">
+        <date>2011-06-26T18:23:25Z
+        </date>
+        <site>Schnepf-sondernach
+        </site>
+        <duration>1320
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="75">
+        <date>2011-07-16T10:48:07Z
+        </date>
+        <site>Treh-Treh
+        </site>
+        <duration>1560
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Deco sud
+        </description>
+    </flight>
+    <flight number="76">
+        <date>2011-07-16T12:09:22Z
+        </date>
+        <site>Treh-Treh
+        </site>
+        <duration>1500
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Deco sud, premier 2000m
+        </description>
+    </flight>
+    <flight number="77">
+        <date>2011-07-31T11:13:26Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="5">
+        <date>2009-08-05T11:02:35Z
+        </date>
+        <site>Forclaz
+        </site>
+        <duration>600
+        </duration>
+        <wing>Alpha4
+        </wing>
+    </flight>
+    <flight number="6">
+        <date>2009-08-05T10:03:45Z
+        </date>
+        <site>Forclaz
+        </site>
+        <duration>600
+        </duration>
+        <wing>Alpha4
+        </wing>
+    </flight>
+    <flight number="7">
+        <date>2009-08-06T15:04:29Z
+        </date>
+        <site>Semnoz
+        </site>
+        <duration>600
+        </duration>
+        <wing>Alpha4
+        </wing>
+    </flight>
+    <flight number="8">
+        <date>2009-08-06T16:05:43Z
+        </date>
+        <site>Semnoz
+        </site>
+        <duration>600
+        </duration>
+        <wing>Alpha4
+        </wing>
+    </flight>
+    <flight number="9">
+        <date>2009-08-06T17:07:02Z
+        </date>
+        <site>Semnoz
+        </site>
+        <duration>600
+        </duration>
+        <wing>Alpha4
+        </wing>
+    </flight>
+    <flight number="10">
+        <date>2010-04-22T09:07:50Z
+        </date>
+        <site>Siebach
+        </site>
+        <duration>180
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="11">
+        <date>2010-04-22T18:08:33Z
+        </date>
+        <site>Schnepf
+        </site>
+        <wing>Koyot bobby
+        </wing>
+        <duration>600
+        </duration>
+    </flight>
+    <flight number="12">
+        <date>2010-04-23T09:09:18Z
+        </date>
+        <site>Schnepf
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="13">
+        <date>2010-04-23T19:10:06Z
+        </date>
+        <site>Schnepf
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="14">
+        <date>2010-04-23T19:10:59Z
+        </date>
+        <site>Schnepf
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="15">
+        <date>2010-04-24T09:11:35Z
+        </date>
+        <site>Schnepf
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="17">
+        <date>2010-04-25T08:13:05Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <wing>Koyot bobby
+        </wing>
+        <duration>720
+        </duration>
+    </flight>
+    <flight number="16">
+        <date>2011-08-13T19:13:05Z
+        </date>
+    </flight>
+    <flight number="18">
+        <date>2010-04-25T18:13:19Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <duration>720
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="19">
+        <date>2011-08-13T19:13:26Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <wing>Koyot bobby
+        </wing>
+        <duration>720
+        </duration>
+    </flight>
+    <flight number="20">
+        <date>2010-06-06T09:15:23Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>480
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="21">
+        <date>2010-06-06T11:15:35Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>540
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="22">
+        <date>2010-06-25T19:15:40Z
+        </date>
+        <duration>180
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <site>Treh-aérotech
+        </site>
+    </flight>
+    <flight number="23">
+        <date>2010-06-26T19:15:49Z
+        </date>
+        <site>Gusti
+        </site>
+        <duration>360
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="24">
+        <date>2010-06-26T19:15:57Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>1140
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="25">
+        <date>2010-07-03T19:16:01Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>540
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="26">
+        <date>2010-07-03T19:16:04Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>660
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="27">
+        <date>2010-07-03T19:16:05Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <duration>660
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="28">
+        <date>2010-07-04T19:16:06Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>540
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="29">
+        <date>2010-07-04T19:16:06Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>720
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="30">
+        <date>2010-07-07T19:16:07Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>840
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="31">
+        <date>2010-07-10T19:16:30Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="32">
+        <date>2010-07-11T19:16:31Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="33">
+        <date>2010-07-11T19:16:31Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>960
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="34">
+        <date>2010-07-14T19:16:32Z
+        </date>
+        <site>Siebach
+        </site>
+        <duration>150
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="35">
+        <date>2010-08-07T19:16:33Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>780
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="36">
+        <date>2010-08-07T19:16:33Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>480
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="37">
+        <date>2010-08-07T19:16:34Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="38">
+        <date>2010-08-07T19:16:35Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>1020
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="39">
+        <date>2010-09-04T19:16:35Z
+        </date>
+        <site>Gusti
+        </site>
+        <duration>360
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="40">
+        <date>2010-09-04T19:16:36Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>1020
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="41">
+        <date>2010-09-04T19:16:37Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>960
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="42">
+        <date>2010-09-04T19:17:14Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>480
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="43">
+        <date>2010-09-05T19:17:15Z
+        </date>
+        <site>Gusti
+        </site>
+        <duration>420
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="44">
+        <date>2010-09-05T19:17:16Z
+        </date>
+        <site>Drumont-aérotech
+        </site>
+        <duration>1500
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="45">
+        <date>2010-09-11T19:17:16Z
+        </date>
+        <site>Gusti-urbes
+        </site>
+        <duration>360
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="46">
+        <date>2010-09-11T19:17:17Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>660
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="47">
+        <date>2010-09-11T19:17:18Z
+        </date>
+        <site>Drumont
+        </site>
+        <duration>900
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="48">
+        <date>2010-09-25T19:17:18Z
+        </date>
+        <site>Ouano
+        </site>
+        <duration>90
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="49">
+        <date>2010-09-25T19:17:19Z
+        </date>
+        <site>Ouano
+        </site>
+        <duration>120
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="50">
+        <date>2010-09-25T19:17:20Z
+        </date>
+        <site>Ouano
+        </site>
+        <duration>180
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="51">
+        <date>2011-01-16T19:17:49Z
+        </date>
+        <site>Siebach
+        </site>
+        <duration>180
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="52">
+        <date>2011-01-16T19:17:51Z
+        </date>
+        <site>Siebach
+        </site>
+        <duration>180
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="53">
+        <date>2011-02-12T19:17:51Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>1200
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="54">
+        <date>2011-02-12T19:17:52Z
+        </date>
+        <site>Treh-Treh
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="55">
+        <date>2011-02-12T19:17:52Z
+        </date>
+        <site>Treh-aérotech
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="56">
+        <date>2011-02-13T19:17:53Z
+        </date>
+        <site>Treh-carry
+        </site>
+        <duration>900
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="78">
+        <date>2011-08-04T17:30:37Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1200
+        </duration>
+        <wing>koyot bobby
+        </wing>
     </flight>
 </cdv>
