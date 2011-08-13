@@ -64,7 +64,7 @@ class ListFly(object):
             track = "Non"
         else:
             track = "Oui"
-        self.treestore.append(['%d'%fly.getNumber(), fly.getSite(),
+        self.treestore.append(['%04d'%fly.getNumber(), fly.getSite(),
                                 gpx2datetime(
                                     fly.getDate()).strftime(
                                         "%d/%m/%y-%H:%M:%S"),
@@ -306,6 +306,15 @@ class Gcdv(object):
             self.window.set_title("CarnetDeVol - "+str(cdv.getName()))
         self.fillListFlies()
 
+        self.statusbar = self.builder.get_object("statusbar1")
+        self.statusbar.contextid = self.statusbar.get_context_id("time status")
+        self.statusbar.push(self.statusbar.contextid,
+             "Duree totale de vol : "+second2time(CDV.getTotalDuration())+\
+             "  -  Temps moyen d'un vol: "+\
+              second2time(CDV.getTotalDuration()/CDV.getNumberOfFlights())+\
+             "  -  Nombre total de vol : "+str(CDV.getNumberOfFlights()))
+                           
+
     def fillListFlies(self): 
         self.listFlies = ListFly(self.cdv, self.builder)
         if self.cdv != None:
@@ -321,6 +330,11 @@ if __name__ == "__main__":
         CDV = CarnetDeVol(xmlfilename=sys.argv[1])
     else:
         CDV = CarnetDeVol()
+
+    print("Duree totale de vol : "+second2time(CDV.getTotalDuration()))
+    print("Temps moyen d'un vol: "+\
+            second2time(CDV.getTotalDuration()/CDV.getNumberOfFlights()))
+    print("Nombre total de vol : "+str(CDV.getNumberOfFlights()))
     app = Gcdv(CDV)
     app.window.show()
     gtk.main()

@@ -102,10 +102,16 @@ class CarnetDeVol:
         """
         self.cdv_root.set("name", str(name))
 
+    def getNumberOfFlights(self):
+        """ Return the number of flight
+        """
+        return len(self.getFlights())
+
     def getFlightNumbers(self):
         """ Return the list of flights number
         """
         return sorted([fly.getNumber() for fly in self.getFlights()])
+
     def getMaxFlightNum(self):
         try:
             return self.getFlightNumbers()[-1]
@@ -136,6 +142,15 @@ class CarnetDeVol:
         new_flight = Flight(number=flight_num)
         new_flight.setDate(datetime.datetime.now())
         self.cdv_root.append(new_flight.node)
+
+    def getTotalDuration(self):
+        """ Return total duration of all flights
+            in seconds
+        """
+        duration = 0
+        for fly in self.getFlights():
+            duration = duration + fly.getDuration()
+        return duration
 
     def printFlights(self):
         """ Print an array of each flight
