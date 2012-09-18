@@ -227,7 +227,8 @@
         </duration>
         <wing>koyot bobby
         </wing>
-        <description />
+        <description>Remontée à pied ouch (2 heures)
+        </description>
     </flight>
     <flight number="74">
         <date>2011-06-26T18:23:25Z
@@ -801,6 +802,322 @@
         <duration>1200
         </duration>
         <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="79">
+        <date>2011-08-17T11:35:45Z
+        </date>
+        <site>Treh-Carry
+        </site>
+        <duration>900
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="80">
+        <date>2011-08-26T19:43:23Z
+        </date>
+        <site>Morzine-planey
+        </site>
+        <wing>koyot bobby
+        </wing>
+        <duration>240
+        </duration>
+    </flight>
+    <flight number="81">
+        <date>2011-08-28T19:48:29Z
+        </date>
+        <site>Mont_Chery-gets
+        </site>
+        <duration>780
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="82">
+        <date>2011-08-29T19:49:06Z
+        </date>
+        <site>Mont_Chery-gets
+        </site>
+        <duration>420
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="83">
+        <date>2011-09-10T10:57:54Z
+        </date>
+        <site>Fontaine
+        </site>
+        <duration>60
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Treuil
+        </description>
+    </flight>
+    <flight number="84">
+        <date>2011-09-10T19:58:38Z
+        </date>
+        <site>Fontaine
+        </site>
+        <duration>60
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Treuil
+        </description>
+    </flight>
+    <flight number="85">
+        <date>2011-09-10T19:58:41Z
+        </date>
+        <site>Fontaine
+        </site>
+        <duration>60
+        </duration>
+        <wing>koyot bobby
+        </wing>
+        <description>Treuil
+        </description>
+    </flight>
+    <flight number="86">
+        <date>2011-09-24T11:15:30Z
+        </date>
+        <site>Gusti-Urbès
+        </site>
+        <duration>600
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="87">
+        <date>2011-09-24T20:01:24Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1200
+        </duration>
+        <wing>koyot bobby
+        </wing>
+    </flight>
+    <flight number="88">
+        <date>2011-09-24T20:03:07Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1020
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="89">
+        <date>2011-09-25T14:11:45Z
+        </date>
+        <site>Treh-Treh
+        </site>
+        <duration>2700
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="90">
+        <date>2011-09-25T15:41:18Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1500
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="91">
+        <date>2011-10-01T11:50:03Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1080
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="92">
+        <date>2011-10-01T19:41:35Z
+        </date>
+        <site>Treh-Urbès
+        </site>
+        <duration>3000
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="93">
+        <date>2011-10-02T11:49:27Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <wing>Koyot bobby
+        </wing>
+        <duration>3960
+        </duration>
+    </flight>
+    <flight number="94">
+        <date>2011-10-02T14:57:36Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <wing>Koyot bobby
+        </wing>
+        <duration>720
+        </duration>
+    </flight>
+    <flight number="95">
+        <date>2011-10-02T16:59:45Z
+        </date>
+        <site>Treh-Carry
+        </site>
+        <duration>960
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="96">
+        <date>2011-10-23T11:07:42Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>540
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="97">
+        <date>2011-10-23T13:07:42Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1020
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="98">
+        <date>2011-10-23T15:12:42Z
+        </date>
+        <site>Treh-Treh
+        </site>
+        <duration>1920
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="99">
+        <date>2012-03-03T13:00:00Z
+        </date>
+        <site>Treh-Aérotech
+        </site>
+        <duration>1440
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="100">
+        <date>2012-04-24T14:36:02Z
+        </date>
+        <site>Treuil fontaine
+        </site>
+        <duration>120
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="101">
+        <date>2012-04-24T14:36:02Z
+        </date>
+        <site>Treuil fontaine
+        </site>
+        <duration>120
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="102">
+        <date>2012-04-24T14:36:02Z
+        </date>
+        <site>Treuil fontaine
+        </site>
+        <duration>120
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="103">
+        <date>2012-05-28T11:11:00Z
+        </date>
+        <site>Gusty-Urbès
+        </site>
+        <duration>4440
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="104">
+        <date>2012-06-01T11:47:28Z
+        </date>
+        <site>Forclaz-bout du lac
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="105">
+        <date>2012-06-01T11:47:28Z
+        </date>
+        <site>Forclaz-bout du lac
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="106">
+        <date>2012-06-02T14:48:45Z
+        </date>
+        <site>Forclaz-bout du lac
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="107">
+        <date>2012-06-02T14:48:45Z
+        </date>
+        <site>Forclaz-bout du lac
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="108">
+        <date>2012-06-02T14:48:45Z
+        </date>
+        <site>Forclaz-bout du lac
+        </site>
+        <duration>600
+        </duration>
+        <wing>Koyot bobby
+        </wing>
+    </flight>
+    <flight number="109">
+        <date>2012-06-23T14:10:08Z
+        </date>
+        <site>Treh-Carry
+        </site>
+        <duration>1260
+        </duration>
+        <wing>Koyot bobby
         </wing>
     </flight>
 </cdv>
